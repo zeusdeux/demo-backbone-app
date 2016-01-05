@@ -1,6 +1,6 @@
 # demo-backbone-app
 
-A demo backbone app to teach my self some backbonejs goodness.
+A demo backbone app to teach myself some backbonejs goodness.
 
 
 # API Endpoints
