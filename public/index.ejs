@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Backbone</title>
+  </head>
+  <body>
+    <header>
+      <h1>Employee list</h1>
+    </header>
+    <main>
+      <p>Total no., of employees: <%= employees.length %></p>
+      <ul>
+        <% for (emp of employees) { %>
+          <li><%= emp.name %>: <%= emp.company %> <a href="/edit/<%= emp._id %>">edit</a></li>
+        <% } %>
+      </ul>
+      <a href="/create">Add new employee!</a>
+    </main>
+  </body>
+</html>

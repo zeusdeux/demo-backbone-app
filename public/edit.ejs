@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Edit employee</title>
+  </head>
+  <body>
+    <main>
+      <form action="/employee/<%= id %>" method="post" id="editEmployee">
+        <label for="name"><input name="name" id="name" type="text" value="<%= employee.name %>" placeholder="Enter name"/></label>
+        <label for="company"><input id="company" name="company" type="text" value="<%= employee.company %>" placeholder="Enter company name"/></label>
+        <button type="submit" form="editEmployee">Go!</button>
+        <button type="reset" form="editEmployee">Reset</button>
+      </form>
+    </main>
+  </body>
+</html>

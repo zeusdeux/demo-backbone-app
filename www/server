@@ -1,0 +1,14 @@
+#! /usr/bin/env node
+
+import app from '../app'
+
+
+const port = ~~parseInt(process.env.PORT, 10) || 3000
+
+const server = app.listen(port, () => {
+  const address = server.address()
+  const port = address.port
+  const host = address.address
+
+  console.log(`Server listening on ${host}:${port}.`)
+})
