@@ -1,6 +1,6 @@
 [
   {
-    "_id": 0,
+    "id": 0,
     "picture": "http://placehold.it/32x32",
     "age": 39,
     "name": "Evans Thompson",
@@ -11,7 +11,7 @@
     "address": "119 Lorraine Street, Rivers, Arkansas, 4465"
   },
   {
-    "_id": 1,
+    "id": 1,
     "picture": "http://placehold.it/32x32",
     "age": 36,
     "name": "Stephenson Hale",
@@ -22,7 +22,7 @@
     "address": "775 Harkness Avenue, Trucksville, Oregon, 4653"
   },
   {
-    "_id": 2,
+    "id": 2,
     "picture": "http://placehold.it/32x32",
     "age": 28,
     "name": "Billie Ford",
@@ -33,7 +33,7 @@
     "address": "233 Little Street, Condon, Delaware, 4768"
   },
   {
-    "_id": 3,
+    "id": 3,
     "picture": "http://placehold.it/32x32",
     "age": 26,
     "name": "Swanson Zimmerman",
@@ -44,7 +44,7 @@
     "address": "644 Gates Avenue, Enlow, Vermont, 8534"
   },
   {
-    "_id": 4,
+    "id": 4,
     "picture": "http://placehold.it/32x32",
     "age": 34,
     "name": "Gwen Obrien",
@@ -55,7 +55,7 @@
     "address": "357 Losee Terrace, Cresaptown, Rhode Island, 5577"
   },
   {
-    "_id": 5,
+    "id": 5,
     "picture": "http://placehold.it/32x32",
     "age": 35,
     "name": "Melanie Levy",
@@ -66,7 +66,7 @@
     "address": "527 Vermont Court, Catharine, Minnesota, 3909"
   },
   {
-    "_id": 6,
+    "id": 6,
     "picture": "http://placehold.it/32x32",
     "age": 25,
     "name": "Stevens Hyde",
@@ -77,7 +77,7 @@
     "address": "759 Canda Avenue, Kenvil, New Mexico, 225"
   },
   {
-    "_id": 7,
+    "id": 7,
     "picture": "http://placehold.it/32x32",
     "age": 34,
     "name": "Deirdre Morales",
@@ -88,7 +88,7 @@
     "address": "216 Bennet Court, Tryon, New Hampshire, 4954"
   },
   {
-    "_id": 8,
+    "id": 8,
     "picture": "http://placehold.it/32x32",
     "age": 29,
     "name": "Lorna Guy",
@@ -99,7 +99,7 @@
     "address": "828 Jackson Court, Brantleyville, West Virginia, 647"
   },
   {
-    "_id": 9,
+    "id": 9,
     "picture": "http://placehold.it/32x32",
     "age": 30,
     "name": "Saundra Whitaker",
