@@ -6,7 +6,7 @@
   </head>
   <body>
     <main>
-      <form action="/employee/<%= id %>" method="post" id="editEmployee">
+      <form action="/employees/<%= id %>" method="post" id="editEmployee">
         <label for="name"><input name="name" id="name" type="text" value="<%= employee.name %>" placeholder="Enter name"/></label>
         <label for="company"><input id="company" name="company" type="text" value="<%= employee.company %>" placeholder="Enter company name"/></label>
         <button type="submit" form="editEmployee">Go!</button>

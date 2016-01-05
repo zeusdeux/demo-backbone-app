@@ -24,7 +24,7 @@ const createEmployee = (req, res, next) => {
     employees[id]  = employee
 
     if(req.xhr) {
-      res.location(`/employee/${id}`)
+      res.location(`/employees/${id}`)
       res.status(201).json(employee)
     }
     else res.redirect('/')
@@ -48,7 +48,7 @@ const updateEmployee = (req, res, next) => {
     req.employee.company = company || req.employee.company
 
     if (req.xhr) {
-      res.location(`/employee/${req.params.id}`)
+      res.location(`/employees/${req.params.id}`)
 
       /*
        * server successfully processed request but
@@ -99,7 +99,7 @@ router.get('/', (req, res) => res.render('index', { employees }))
  */
 
 router
-  .route('/employee/:id')
+  .route('/employees/:id')
   .all((req, res, next) => {
     const id       = req.params.id
     const employee = employees[id]
