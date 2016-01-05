@@ -112,7 +112,7 @@ router
   })
   .get((req, res, next) => {
     try {
-      const payload = { employee: req.employee }
+      const payload = req.employee
 
       if (req.xhr) res.json(payload)
       else res.render('employee', payload)
