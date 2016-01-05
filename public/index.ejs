@@ -12,7 +12,7 @@
       <p>Total no., of employees: <%= employees.length %></p>
       <ul>
         <% for (emp of employees) { %>
-          <li><%= emp.name %>: <%= emp.company %> <a href="/edit/<%= emp._id %>">edit</a></li>
+        <li><a href="/employee/<%= emp._id %>"><%= emp.name %></a>: <%= emp.company %> <a href="/edit/<%= emp._id %>">edit</a></li>
         <% } %>
       </ul>
       <a href="/create">Add new employee!</a>
