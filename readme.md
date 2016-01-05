@@ -15,17 +15,17 @@ A demo backbone app to teach myself some backbonejs goodness.
 > Note: These endpoints, when hit using AJAX return JSON
 > else they usually return a full page
 
-### `GET /employee/:id`
+### `GET /employees/:id`
 
 Returns details of employee with `id`
 
-### `POST/PUT /employee/:id`
+### `POST/PUT /employees/:id`
 
 Updates details of employee with `id`
 
 Takes two params, `name` & `company` both of which are strings.
 
-### `DELETE /employee/:id`
+### `DELETE /employees/:id`
 
 Deletes employee with `id`
 
