@@ -7,6 +7,35 @@ const router = new Router()
 
 
 /*
+ * Create an employee and respond to request
+ */
+
+const createEmployee = (req, res, next) => {
+  try {
+    const name     = req.body.name
+    const company  = req.body.company
+    const id       = employees.length
+    const employee = {
+      _id: id,
+      name,
+      company
+    }
+
+    employees[id]  = employee
+
+    if(req.xhr) {
+      res.location(`/employee/${id}`)
+      res.status(201).json(employee)
+    }
+    else res.redirect('/')
+  }
+  catch(e) {
+    next(e)
+  }
+}
+
+
+/*
  * Update details for an employee and respond to request
  */
 
@@ -47,35 +76,6 @@ const deleteEmployee = (req, res, next) => {
     employees.splice(id, 1)
 
     if (req.xhr) res.sendStatus(204)
-    else res.redirect('/')
-  }
-  catch(e) {
-    next(e)
-  }
-}
-
-
-/*
- * Create an employee and respond to request
- */
-
-const createEmployee = (req, res, next) => {
-  try {
-    const name     = req.body.name
-    const company  = req.body.company
-    const id       = employees.length
-    const employee = {
-      _id: id,
-      name,
-      company
-    }
-
-    employees[id]  = employee
-
-    if(req.xhr) {
-      res.location(`/employee/${id}`)
-      res.status(201).json(employee)
-    }
     else res.redirect('/')
   }
   catch(e) {
