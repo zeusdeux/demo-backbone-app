@@ -114,7 +114,7 @@ router
     try {
       const payload = { employee: req.employee }
 
-      if (res.xhr) res.json(payload)
+      if (req.xhr) res.json(payload)
       else res.render('employee', payload)
     }
     catch(e) {

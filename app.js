@@ -31,7 +31,7 @@ app.use((req, res, next) => {
 app.use((err, req, res, _) => {
   const status = err.status || 500
 
-  if (req.xhr) req.sendStatus(status)
+  if (req.xhr) res.sendStatus(status)
   else {
     const payload = {
       status,
